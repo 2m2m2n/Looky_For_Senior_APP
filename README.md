@@ -87,3 +87,6 @@ flutter run
 - [CatVTON: Concatenation Is All You Need for Virtual Try-On (ICLR 2025)](https://github.com/Zheng-Chong/CatVTON)
 - [MobileNetV2: Inverted Residuals and Linear Bottlenecks (CVPR 2018)](https://arxiv.org/abs/1801.04381)
 - [DensePose: Dense Human Pose Estimation in the Wild (CVPR 2018)](https://github.com/facebookresearch/DensePose)
+
+- ## 라이선스
+MIT License
