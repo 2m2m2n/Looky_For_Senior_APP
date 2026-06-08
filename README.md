@@ -58,3 +58,32 @@
 - **추론 지연 최소화:** 단일 이미지당 평균 추론 시간 약 180ms를 기록하여 모바일 실시간 대응 요건 충족
 
 <br>
+
+## 🚀 실행 방법 (Getting Started)
+
+### 1. Backend (FastAPI) 실행
+```bash
+cd backend
+pip install -r requirements.txt
+uvicorn main:app --reload --host 0.0.0.0 --port 8000
+```
+
+### 2. AI Server (Google Colab) 셋업
+1. `ai/` 폴더 내의 노트북 파일을 Google Colab에 업로드
+2. 런타임 유형을 **T4 GPU**로 변경 후 셀을 순차적으로 실행
+3. 가중치 다운로드 완료 후 발급된 ngrok URL을 백엔드 환경변수에 연동
+
+### 3. Frontend (Flutter) 빌드
+```bash
+cd frontend
+flutter pub get
+flutter run
+```
+
+<br>
+
+## 📄 참고 자료 (References)
+
+- [CatVTON: Concatenation Is All You Need for Virtual Try-On (ICLR 2025)](https://github.com/Zheng-Chong/CatVTON)
+- [MobileNetV2: Inverted Residuals and Linear Bottlenecks (CVPR 2018)](https://arxiv.org/abs/1801.04381)
+- [DensePose: Dense Human Pose Estimation in the Wild (CVPR 2018)](https://github.com/facebookresearch/DensePose)
